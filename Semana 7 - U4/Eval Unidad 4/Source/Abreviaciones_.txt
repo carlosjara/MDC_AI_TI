@@ -1,0 +1,38 @@
+-- Create a table
+CREATE TABLE grupo_9.location_abbreviations (
+    id INT PRIMARY KEY,
+    full_name VARCHAR(255),
+    abbreviation VARCHAR(10)
+);
+
+-- Insert data into the table
+INSERT INTO grupo_9.location_abbreviations (id, full_name, abbreviation)
+VALUES
+    (103, 'Crawford', 'CRWFD'),
+    (125, 'Sawyer West', 'SWEST'),
+    (44, 'Clear Creek', 'CREEK'),
+    (72, 'Timberland', 'TMBRLD'),
+    (182, 'Somerset', 'SOMET'),
+    (24, 'Veenker', 'VNKR'),
+    (30, 'Briardale', 'BRDAL'),
+    (1, 'Landmrk', 'LDMRK'),
+    (23, 'Northpark Villa', 'NPVILA'),
+    (10, 'Bluestem', 'BLSTM'),
+    (37, 'Meadow Village', 'MDWVIL'),
+    (48, 'South & West of Iowa State University', 'SWISU'),
+    (71, 'Northridge', 'NRIDGE'),
+    (443, 'North Ames', 'NAM'),
+    (267, 'College Creek', 'CCREEK'),
+    (131, 'Northwest Ames', 'NWAM'),
+    (194, 'Edwards', 'EDWDS'),
+    (165, 'Gilbert', 'GLBRT'),
+    (93, 'Iowa DOT and Rail Road', 'IADRR'),
+    (108, 'Brookside', 'BKSD'),
+    (151, 'Sawyer', 'SWYR'),
+    (2, 'GrnHill', 'GHILL'),
+    (114, 'Mitchell', 'MTCHEL'),
+    (28, 'Bloomington Heights', 'BHGHTS'),
+    (8, 'Greens', 'GRNS'),
+    (166, 'Northridge Heights', 'NRGHTS'),
+    (51, 'Stone Brook', 'STBROK'),
+    (239, 'Old Town', 'OTOWN');

@@ -1,0 +1,212 @@
+Existen dos tipos de esquemas comúnmente utilizados para el diseño de una bodega de datos: el esquema en estrella y el esquema en copo de nieve.
+Ambos tipos de esquemas están compuestos por Tablas de hechos y dimensiones. Señale las características de una tabla de dimensiones
+
+1. Los valores de los atributos de esta tabla tienen un dominio predefinido y se mantienen consistentes en el tiempo
+2. Es una tabla relativamente pequeña, con unos cientos de filas
+
+3. Contiene medidas cuantitativas o métricas
+
+4. Es la tabla central en el esquema de una bodega de datos
+
+5. Contiene valores agregados.
+
+6.Los atributos contienen información descriptiva sobre entidades o conceptos de negocio.
+
+R 1,6
+
+cuales de Las siguientes afirmaciones son correctas para los sistemas OLTP
+
+1. Ninguna afirmación es verdadera
+
+2. Estos sistemas soportan la inteligencia de negocios
+
+3. Estos sistemas soportan la lógica del negocio 
+
+4. Estos sistemas gestionan las transacciones operativas diarias de una organización en tiempo real.
+
+5. Estos sistemas se utilizan para analizar y consultar datos con el fin de obtener información y  tomar decisiones informadas.
+
+R. 3,4
+
+Cuál de las siguientes afirmaciones no es correcta acerca de un DW (Data Warehouse):
+
+Seleccione una:
+1. Un DW es más adecuado como base de datos para la operación de la empresa
+
+2. Las actualizaciones en un DW son poco frecuentes
+
+3. A menudo, en un DW se integra información originaria de diferentes sistemas
+
+4. Un DW posee datos históricos consolidados
+
+R (1) 3
+
+
+Cuando hablamos de OLTP, hacemos referencia a:
+
+Seleccione una:
+1. Un tipo de procesamiento orientado hacia el análisis de los datos
+
+2. Un tipo particular de bodegas de datos
+
+3. Un tipo de procesamiento orientado hacia las transacciones y la operación
+
+4. El proceso de normalización de las bases de datos transaccionales
+
+R. 3
+
+
+
+Al decir que un DW (Data Warehouse) no es volátil, esto significa que:
+Seleccione una:
+1. Está enfocado en el modelado para toma de decisiones
+
+2. Cuando se agregan nuevos datos, los datos viejos se mantienen
+
+3. Integra información de diferentes fuentes
+
+4. Los datos que almacena son heterogéneos
+
+
+
+En el proceso de ETL, la función de extracción de datos implica:
+
+Seleccione una:
+1. Ordenar y consolidar los datos en el destino
+
+2. Recopilación de información desde diferentes fuentes
+
+3. Corregir los errores en los datos de origen
+
+4. Convertir los datos del formato origen al formato destino
+
+
+
+Cuando hablamos de OLAP, hacemos referencia a:
+Seleccione una:
+
+1. El conjunto de hechos y dimensiones que conforman un cubo de datos
+
+2. Un tipo de procesamiento orientado hacia las transacciones y la operación
+
+3. Un tipo particular de bodegas de datos
+
+4. Un tipo de procesamiento orientado hacia el análisis de los datos
+
+R 4
+
+
+¿Cuál es una diferencia clave entre los sistemas OLTP y OLAP?
+1. OLTP se utiliza para los procesos de toma de decisiones, mientras que OLAP se utiliza para el procesamiento de transacciones.
+
+2. OLTP está diseñado para consultas analíticas complejas, mientras que OLAP maneja transacciones en tiempo real.
+
+3.  OLTP se centra en datos históricos, mientras que OLAP se centra en datos en tiempo real.
+
+4. OLTP almacena datos detallados y granulares, mientras que OLAP almacena datos resumidos y agregados.
+
+R. 4
+
+
+Las siguientes afirmaciones son correctas para un Datalake
+
+1. Ninguna  afirmación es correcta 
+2. Los datos en el DataLake se suelen almacenar limpios,  transformados y en bruto.
+3. Un Datalake es un repositorio altamente estructurad que solamente alberga datos que han sido transformados y limpios.
+4.Un Datalake está diseñado para alojar datos estructurados, semiestructurados y no estructurados
+5. Un Datalake es un repositorio OLTP, es decir, del plano transaccional
+6. Un Datalake puede alojar todo tipo de datos de cualquier fuente,  como por ejemplo, tablas de bases de datos, hojas de cálculo de Excel, archivos XML, imágenes, archivos de audio, tweets, entre otros.
+
+R. 4,6
+
+
+
+ Existen dos tipos de esquemas comúnmente utilizados para el diseño de una bodega de datos: el esquema en estrella y el esquema en copo de nieve.
+Ambos tipos de esquemas están compuestos por Tablas de hechos y dimensiones. Señale las características de una tabla de hechos.
+1. Contiene medidas cuantitativas o métricas
+2. Los atributos contienen información descriptiva sobre entidades o conceptos de negocio.
+3. Contiene valores agregados.
+4. Es una tabla relativamente pequeña, con unos cientos de filas
+5. Es la tabla central en el esquema de una bodega de datos
+6. Los valores de los atributos de esta tabla tienen un dominio predefinido y se mantienen consistentes en el tiempo
+
+R 1,3,5
+
+
+Indique cuál de las siguientes es una afirmación correcta:
+Seleccione una:
+1. Generalmente un Data Mart contiene una cantidad mayor de información que un Data Warehouse
+2. En los Data Warehouse se realizan transacciones en tiempo real 
+3. Una base de datos operativa (OLTP) es ideal para hacer análisis de datos
+4. Para los mismos requerimientos de información, las consultas OLAP generalmente tienen mejores tiempos de respuesta que las consultas OLTP
+
+R 4
+
+
+Preguntas y respuestas sobre la inteligencia de negocios (Business Intelligence)
+
+1. ¿Cuál es el objetivo principal de la inteligencia de negocios (Business Intelligence)? 
+Selecione una.
+A. Metodos analiticos y tecnicas de visualizacion de datos
+B. GEneracion de informes, paneles de control y visualizaciones
+C. Extraccion, tranformacion y carga de datos
+[X]D. Recopilar, analizar y presentar datos para soportar la toma de decisiones
+
+2. ¿Qué tecnologías y herramientas se utilizan en la inteligencia de negocios?
+Selecione una.
+[X]A. Metodos analiticos y tecnicas de visualizacion de datos
+B. GEneracion de informes, paneles de control y visualizaciones
+C. Extraccion, tranformacion y carga de datos
+D. Recopilar, analizar y presentar datos para soportar la toma de decisiones
+
+
+
+Señale las características de un Data Lake:
+
+1. Almacena datos estructurados y procesados en un esquema predefinido. 
+
+2. No tienen un esquema predefinido, el esquema se aplica en el momento del consumo o análisis de los datos
+
+3. requieren un proceso completo de integración y transformación de datos antes de cargarlos en el repositorio
+
+4. Permiten la ingestión rápida y flexible de datos de diversas fuentes, tanto por lotes como en tiempo real.
+
+5. Se utilizan a menudo para la exploración de datos, el descubrimiento de datos y el análisis avanzado.
+
+R. 2,4, 5
+
+
+
+Las siguientes son características de las Bodegas de Datos.  Elija todas las opciones correctas:
+
+1. Contienen información histórica para análisis y reportes
+
+2. La información se está borrando y actualizando constantemente
+
+3. La información está estructurada y tiene un esquema predefinido
+
+4. La información se organiza de forma desagregada y en formato original
+
+5. Son repositorios no volátiles
+
+6. Su diseño está guiado por el objetivo.
+
+7. Son de propósito general y contienen todos los datos de una compañía
+
+R 1,3,5, 6
+
+
+
+Las siguientes afirmaciones son correctas para los sistemas OLAP
+
+1. Ninguna afirmación es verdadera
+
+2. Estos sistemas gestionan las transacciones operativas diarias de una organización en tiempo real.
+
+3. Estos sistemas soportan la lógica del negocio 
+
+4. Estos sistemas se utilizan para analizar y consultar datos con el fin de obtener información y  tomar decisiones informadas.
+
+5. Estos sistemas soportan la inteligencia de negocios
+
+R (3,)4,5

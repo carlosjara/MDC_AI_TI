@@ -1,0 +1,72 @@
+Pregunta Modelos SQL 
+¿Cuál es el propósito principal de la configuración maestro-esclavo en MongoDB?
+- Mejorar la disponibilidad y tolerancia a fallos del sistema.
+- Mejorar la disponibilidad y tolerancia a fallos del sistema.
+- Permitir la distribución de datos entre múltiples réplicas.
+- Permitir la distribución de datos entre múltiples réplicas.
+
+¿Cuál de las siguientes afirmaciones es cierta sobre la consistencia en una base de datos NoSQL?
+- Todas las bases de datos NoSQL garantizan una consistencia estricta en todo momento.
+- Todas las bases de datos NoSQL garantizan una consistencia estricta en todo momento.
+- Las bases de datos NoSQL solo proporcionan consistencia débil en un nodo.
+- Las bases de datos NoSQL utilizan bloqueo para asegurar la consistencia.
+
+¿Cuál de las siguientes afirmaciones describe mejor una característica de las bases de datos orientadas a documentos?
+- Utilizan tablas y relaciones para almacenar los datos.
+- Los documentos se estructuran en filas y columnas.
+- Pueden manejar datos semi-estructurados y no estructurados.
+- Los documentos se almacenan en formato binario.
+
+Utilizan tablas y relaciones para almacenar los datos.
+Los documentos se estructuran en filas y columnas.
+Pueden manejar datos semi-estructurados y no estructurados.
+Los documentos se almacenan en formato binario.
+- Son ideales para aplicaciones que requieren transacciones complejas y ACID.
+- Proporcionan un esquema rígido y definido que garantiza la integridad de los datos.
+- Son altamente escalables y pueden manejar grandes volúmenes de datos y cargas de trabajo.
+- Utilizan el modelo relacional y SQL para consultas y manipulación de datos.
+
+¿Cuál de las siguientes afirmaciones describe mejor el concepto de clave primaria en una base de datos relacional?
+- Es un atributo que puede tener múltiples valores en una tabla.
+- Identifica de manera única una fila en una tabla.
+- Es un enlace entre dos tablas relacionadas.
+- Se utiliza para almacenar datos no estructurados en una base de datos.
+
+Es un atributo que puede tener múltiples valores en una tabla.
+Identifica de manera única una fila en una tabla.
+Es un enlace entre dos tablas relacionadas.
+Se utiliza para almacenar datos no estructurados en una base de datos.
+- La escalabilidad horizontal se logra agregando más recursos (como RAM o CPU) a un único servidor.
+- La escalabilidad horizontal se logra distribuyendo los datos y las cargas de trabajo en varios servidores
+- La escalabilidad horizontal no es posible en bases de datos NoSQL.
+- La escalabilidad horizontal solo se aplica a bases de datos NoSQL orientadas a grafos.
+
+¿Cuál de las siguientes afirmaciones es verdadera sobre JSON (JavaScript Object Notation)?
+- JSON es un lenguaje de programación utilizado para crear sitios web dinámicos.
+- JSON es un formato de intercambio de datos ligero y legible por humanos.
+- JSON solo puede almacenar datos de tipo numérico.
+- JSON solo se puede utilizar con bases de datos SQL.
+
+¿Cuál de las siguientes afirmaciones describe mejor el concepto de clave externa (foreign key) en una base de datos relacional?
+- Es un atributo que puede tener múltiples valores en una tabla.
+- Identifica de manera única una fila en una tabla.
+- Es un enlace entre dos tablas relacionadas.
+- Se utiliza para almacenar datos no estructurados en una base de datos.
+
+¿Cuál de las siguientes afirmaciones describe mejor una base de datos NoSQL?
+- Utiliza el lenguaje SQL para consultas y manipulación de datos.
+- Utiliza un esquema rígido y predefinido para almacenar datos.
+- Proporciona una estructura flexible y escalable para almacenar datos no estructurados.
+- Utiliza tablas relacionales para almacenar datos.
+
+¿Cuál de las siguientes opciones describe mejor la estructura de una colección en MongoDB?
+- Una colección es similar a una tabla en una base de datos relacional y contiene registros con campos y valores.
+- Una colección es un conjunto de documentos JSON que pueden tener estructuras y campos variables.
+- Una colección es una agrupación de documentos que se organiza en columnas y filas.
+- Una colección es una representación visual de datos en forma de gráficos y nodos interconectados.
+
+¿Cuál de las siguientes opciones describe mejor la consistencia eventual en una base de datos NoSQL?
+- Garantiza que todos los nodos en el clúster tengan la misma vista de los datos en todo momento.
+- Permite que los datos puedan estar temporalmente en estados inconsistentes, pero eventualmente convergen a un estado consistente.
+- Garantiza que todas las transacciones sean atómicas y cumplan con las propiedades ACID.
+- Proporciona un alto rendimiento en la escritura de datos a costa de una menor disponibilidad.

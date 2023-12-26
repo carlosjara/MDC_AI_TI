@@ -1,0 +1,21 @@
+Name, Age, Height (cm), Weight (kg), Salary ($), City
+"Alice", 30, 165.5, 60.2, 50000, "New York"
+"Bob", 25, 175.0, 75.0, 60000, "Los Angeles"
+"Charlie", 32, 170.5, , 55000, "Chicago"
+"David", 26, 180.0, 85.5, 59000, "San Francisco"
+"Eve", Twenty-Five, 160, 58, 52000, " Bristol"
+"Frank", 35, 175.5, 70.0, , "Washington, D.C."
+"Grace", 29, , 65.0, 51000, "Huston"
+"Heidi", 28, 168.0, 0, 55000, "Houston"
+"Ivan", 34, 185.0, 95.0, 68000, "Miani"
+"Jack", 27, 172.5, 70.5, 54000, "Boston"
+"Katie", 31, 160.0, 55.5, 52000, "Seattle"
+"Liam", 24, 178.5, 73.5, 61000, , ,
+"Mia", 33, "66.0", 61.8, 59000, "San Diego"
+"Nora", 25, 163.0, 59.0, 52000, "San  Francisco"
+"Oliver", 30, 173.0, 74.0, 58000, "New York"
+"Penny", 28, 169.5, 63.5, 56000, "Los Angeles"
+"Quinn", , 172.0, 77.5, 57000, , ,
+"Ryan", "150", 181.0, 92.0, , "Chicago"
+"Sophia", 33, 167.5, 62.0, 62000, "Miami"
+

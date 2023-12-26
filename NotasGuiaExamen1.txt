@@ -1,0 +1,116 @@
+/*
+Estudiante: Carlos Enrique Jaramillo ARos
+MCD - Infraestructura y arquitectura TI - Parcial 1
+18/11/2023
+*/
+
+1. ¿Una película tiene 0 o más premios?
+	db.movies.findOne({awards:{$exists:true}})
+	
+2. ¿Los premios podrían ser Oscars?
+	db.movies.find({"awards.text":/Nom.*scar/}).count()
+	
+3. ¿Una película tiene cero o más tomates, ¿qué es un tomate?
+  db.movies.find({tomato:{$exists:true}}).count()
+  db.movies.find({tomato:{$exists:true}},{tomato:1,_id:0})
+
+4. ¿Una película tiene cero o más imdbs?
+  db.movies.find({imdb:{$exists:true}}).count()
+	
+5. ¿Cuantas peliculas tienen mas de 8 en la califiacaion de imdb?
+	db.movies.find({"imdb.rating":{$gt:8}}).count()
+
+Consultas en examen :
+
+Consulta A: Obtener los nombres y años de las películas (title) con género (genres) igual a "Adventure" y clasificadas (rated) como PG-13, ordenadas por el título, en orden alfabético. 
+
+db.movies.find({"rated":"PG-13",genres:{$in:['Adventure']}},{_id:0,title:1,year:1}).sort({title:1})
+
+Consulta B: Buscar películas que tengan una duración mayor a 120, que hayan sido nominadas a premios y que no sean de USA, ordenadas por clasificación y año de forma ascendente.
+
+db.movies.find({runtime:{$gt:120},"awards.nominations":{$gt:0},countries:{$nin:['USA']}},{_id:0,title:1,year:1}).sort({year:1,rated:1}).count()
+
+Consulta C: Buscar películas en las que haya participado como actor "Brad Pitt" o como escritor "Quentin Tarantino" y que tengan una calificación de IMDb superior a 6.5.
+
+ db.movies.find({"imdb.rating":{$gt:6.5},$or:[{"actors":{$in:['Brad Pitt']}},{"writers":{$in:['Quentin Tarantino']}}]},{year:1})
+
+Consulta D: Mostrar el título de la película que ha obtenido más premios.
+
+db.movies.find({},{_id:0,title:1,"awards.wins":1}).sort({ "awards.wins": -1 }).limit(1)
+
+Consulta E: Obtener el nombre, año y duración de las películas que no son de “France” ni de “USA” y que han ganado más de 2 premios. Los resultados deben ir ordenados de forma ascendente de acuerdo al año.
+
+db.movies.find({countries:{$nin:['USA','France']},"awards.wins":{$gt:2}},{_id:0,title:1,year:1,runtime:1}).sort({year:1})
+
+Consulta F: Muestre la cantidad de películas producidas por año. Presente los resultados ordenados de mayor a menor por la cantidad de películas.
+
+db.movies.aggregate([
+	{$group: { 
+			_id: {Año: "$year"}, 
+			Cantidad: {$sum:1}
+			}
+	},
+	{$sort:{Cantidad:-1}
+	}
+])
+
+Consulta G: Obtener los 5 países cuyas películas han recibido más premios (Tip: uso de $unwind).
+
+db.movies.aggregate([
+  { $unwind: "$countries" },
+  { $group: {
+      _id: "$countries",
+      Premios: { $sum: "$awards.wins" }  
+    }
+  },
+  { $sort: { Premios: -1 } },  
+  { $limit: 5 } 
+])
+
+Consulta H: Encontrar la cantidad de películas por género, ordenadas de mayor a menor.
+
+
+db.movies.aggregate([
+  { $unwind: "$genres" },
+  { $group: {
+      _id: "$genres",
+      Premios: { $sum: 1 }  
+    }
+  },
+  { $sort: { Premios: -1 } }
+])
+
+
+Consulta I: El pais que mas películas premiadas tiene, cuantas películas tiene.
+
+db.movies.aggregate([
+  { $unwind: "$countries" },
+  { $group: {
+      _id: "$countries",
+      Premios: { $sum: "$awards.wins" },
+	  Cantidad: { $sum: 1 }	  
+    }
+  },
+  { $sort: { Premios: -1 } },  
+  { $limit: 1 } 
+])
+
+
+
+
+Consulta B: Buscar películas que tengan una duración mayor a 120, que hayan sido nominadas a premios y que no sean de USA, ordenadas por clasificación y año de forma ascendente.
+
+db.movies.find({runtime:{$gt:120},"awards.nominations":0,countries:{$nin:['USA']}},{_id:0,title:1,year:1}).sort({rated:1,year:1}).count()
+68
+
+db.movies.find({runtime:{$gt:120},"awards.nominations":{$gt:0},countries:{$nin:['USA']}},{_id:0,title:1,year:1}).sort({rated:1,year:1}).count()
+67
+
+db.movies.find({runtime:{$gt:120},"awards.nominations":{$gt:1},countries:{$nin:['USA']}},{_id:0,title:1,year:1}).sort({rated:1,year:1}).count()
+52
+
+db.movies.find({runtime:{$gt:120},"awards.nominations":{$exists:true},countries:{$nin:['USA']}},{_id:0,title:1,year:1}).sort({rated:1,year:1}).count()
+135
+
+
+--- Cheat Sheet Mongo

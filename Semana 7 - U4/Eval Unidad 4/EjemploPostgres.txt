@@ -1,0 +1,22 @@
+/*
+Proyecto InfraTI
+Grupo 
+Andrea Timaran
+Laura Espinosa
+Carlos Jaramillo
+*/
+
+--Scripts para simulacion de Transformaciones
+select "1st Flr SF", "2nd Flr SF","Low Qual Fin SF",
+	("1st Flr SF"+"2nd Flr SF"+"Low Qual Fin SF") as "Gr Liv Area"
+	from "public"."amesdbtemp";
+	
+select * from "public"."floordetail" where PID = '903476090';
+
+select sum(bedrooms) TotalBdrooms, 
+	   sum("Full Bath") TotalFBath, 
+	   sum("Half Bath") TotalHBath, 
+	   	pid
+	from "public"."floordetail" 
+		 --where PID = '903476090'
+group by pid
